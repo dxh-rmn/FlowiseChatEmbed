@@ -4,3 +4,7 @@ services:
     env: static
     buildCommand: npm install --legacy-peer-deps && npm run build
     staticPublishPath: ./dist
+    headers:
+      - path: /*
+        name: Access-Control-Allow-Origin
+        value: "*"
