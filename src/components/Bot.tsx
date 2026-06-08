@@ -579,7 +579,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
         });
     }
 
-    scrollToBottom()
+    scrollToBottom();
 
     let isProgrammaticScroll = false;
     const handleScroll = () => {
@@ -954,7 +954,7 @@ export const Bot = (botProps: BotProps & { class?: string }) => {
       if (typeof value === 'object') return Object.keys(value as Record<string, unknown>).length === 0;
       return false;
     };
-    
+
     const shouldRemoveEmptyApiMessage = (message?: MessageType) => {
       if (!message || message.type !== 'apiMessage') return false;
       const payload = {
